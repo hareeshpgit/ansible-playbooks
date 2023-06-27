@@ -1,0 +1,11 @@
+---
+- name: My test playbook
+  hosts: all
+  become: true
+  tasks:
+  - name: copying a directory
+    copy:
+      src: /home/ansadmin/index.html
+      dest: /home/ansadmin
+      mode: 777
+
